@@ -11,6 +11,12 @@
         <groupId>com.credits.client</groupId>
         <version>none</version>
     </parent>
+    
+    <properties>
+        <java.version>11</java.version>
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+    </properties>
 
     <build>
         <defaultGoal>install</defaultGoal>
@@ -28,14 +34,50 @@
             <version>1.8.3</version>
         </dependency>
         <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.core.runtime</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.equinox.common</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.equinox.preferences</artifactId>
+            <version>3.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.core.resources</artifactId>
+            <version>3.14.0</version>
+        </dependency>  
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.core.jobs</artifactId>
+            <version>3.10.800</version>
+        </dependency> 
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.text</artifactId>
+            <version>3.10.0</version>
+        </dependency> 
+        <dependency>
+            <groupId>org.eclipse.platform</groupId>
+            <artifactId>org.eclipse.core.contenttype</artifactId>
+            <version>3.6.0</version>
+        </dependency>
+          
+        <dependency>
             <groupId>org.eclipse.jdt</groupId>
             <artifactId>org.eclipse.jdt.core</artifactId>
-            <version>3.13.100</version>
+            <version>3.13.102</version>
         </dependency>
         <dependency>
             <groupId>org.kocakosm</groupId>
             <artifactId>jblake2</artifactId>
-            <version>RELEASE</version>
+            <version>0.4</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
